@@ -329,6 +329,11 @@
     postcss "7.0.32"
     purgecss "^2.3.0"
 
+"@iconify/vue@^2.0.0-rc.1":
+  version "2.0.0-rc.1"
+  resolved "https://registry.npmjs.org/@iconify/vue/-/vue-2.0.0-rc.1.tgz#9d44da21a3642c1f01e384c51b9cdcd00bdcea1f"
+  integrity sha512-3e1yOCIeALLWRq2iLcrdH6GTV/HF1XhS2QXUL5hFQQiLGIxw+XaArmBYXLtymKevpD3/e6K9N0drxwbTfuX/8g==
+
 "@marionebl/sander@^0.6.0":
   version "0.6.1"
   resolved "https://registry.npmjs.org/@marionebl/sander/-/sander-0.6.1.tgz#1958965874f24bc51be48875feb50d642fc41f7b"
