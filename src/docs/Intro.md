@@ -1,4 +1,4 @@
-# vite-components-playground
+# Intro
 
 This is a vue3 components playground use [vite](https://github.com/vitejs/vite).
 
@@ -22,7 +22,6 @@ Use [rollup-plugin-vue](https://github.com/vuejs/rollup-plugin-vue) build vue co
 
 ## TODO
 
-+ add github page
 + add lerna
   + add common package
   + change build mode way

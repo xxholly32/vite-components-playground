@@ -1,7 +1,30 @@
-# vite-general-components
+# vite-components-playground
 
-this is a framework for vue3 general components base on [vue ui](https://github.com/vuejs/ui) but use vite and vue3.
+This is a vue3 components playground use [vite](https://github.com/vitejs/vite).
 
-if you are using vue2 you can use litter bother [vue-general-components](https://xxholly32.github.io/vue-general-components/)
+> If you are using vue2 you can use litter bother [vue-general-components](https://xxholly32.github.io/vue-general-components/)
 
-I was still work with on change vue ui to vue3
+## Doc site
+
+```bash
+npm run dev
+```
+
+Use [vite-plugin-vuedoc](https://github.com/JasKang/vite-plugin-vuedoc) to change markdown to vue , [Tailwind](https://tailwindcss.com/) for site css framework.
+
+## build component
+
+```bash
+npm run build:all
+```
+
+Use [rollup-plugin-vue](https://github.com/vuejs/rollup-plugin-vue) build vue components.
+
+## TODO
+
++ add github page
++ add lerna
+  + add common package
+  + change build mode way
+  + add theme
++ add test
