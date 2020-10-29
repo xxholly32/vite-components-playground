@@ -3,8 +3,9 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "vite",
+    "test": "jest",
     "clean": "rimraf lib && mkdir lib",
-    "bootstrap":"yarn && lerna bootstrap",
+    "bootstrap": "yarn && lerna bootstrap",
     "build": "vite build",
     "build:all": "lerna run build",
     "deploy": "bash deploy.sh"
@@ -13,17 +14,24 @@
     "vue": "^3.0.0-rc.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.8.4",
     "@iconify/json": "^1.1.248",
     "@iconify/vue": "^2.0.0-rc.1",
     "@tailwindcss/typography": "^0.2.0",
+    "@types/jest": "^26.0.10",
     "@vue/compiler-sfc": "^3.0.0-rc.1",
+    "@vue/test-utils": "^2.0.0-beta.3",
+    "jest": "^25.1.0",
     "lerna": "^3.13.0",
     "markdown-it": "^11.0.1",
     "markdown-it-prism": "^2.1.2",
     "postcss-nested": "^4.2.3",
     "tailwindcss": "^1.8.10",
+    "typescript": "^4.0.5",
     "vite": "^1.0.0-rc.1",
     "vite-plugin-vuedoc": "^0.0.10",
+    "vue-jest": "5.0.0-alpha.1",
     "vue-router": "^4.0.0-beta.4"
   }
 }
