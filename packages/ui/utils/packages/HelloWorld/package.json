@@ -1,0 +1,31 @@
+{
+  "name": "@vitec/hello-world",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib && mkdir lib",
+    "build": "npm run clean && rollup --config build/rollup.config.js",
+    "release": "standard-version && npm run cz:changelog",
+    "cz:changelog": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md"
+  },
+  "dependencies": {
+    "vue": "^3.0.0-rc.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@rollup/plugin-babel": "^5.2.1",
+    "@rollup/plugin-commonjs": "^15.1.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "clean-css": "^4.2.3",
+    "conventional-changelog-cli": "^2.0.34",
+    "rimraf": "^3.0.2",
+    "rollup": "^1.16.7",
+    "rollup-plugin-css-only": "^2.1.0",
+    "rollup-plugin-vue": "^6.0.0-beta.4",
+    "standard-version": "^8.0.0",
+    "sass": "^1.26.10",
+    "sass-loader": "^10.0.2"
+  }
+}
