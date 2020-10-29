@@ -22,8 +22,4 @@ Use [rollup-plugin-vue](https://github.com/vuejs/rollup-plugin-vue) build vue co
 
 ## TODO
 
-+ add lerna
-  + add common package
-  + change build mode way
-  + add theme
 + add test

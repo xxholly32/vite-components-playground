@@ -1,3 +1,4 @@
+// TODO: change to auto config
 const menuConfig = [
   {
     name: "GET STARTED",
@@ -13,7 +14,7 @@ const menuConfig = [
     children: [
       {
         name: "hello-world",
-        path: "HelloWorld",
+        path: "../../packages/HelloWorld/README",
       },
     ],
   },
