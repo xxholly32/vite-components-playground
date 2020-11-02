@@ -1,16 +1,23 @@
+import Intro from "../docs/Intro.md";
+import HelloWorld from "../../packages/HelloWorld/README.md";
+
 declare type Menu = {
   name: string;
-  path?: string;
-  children?: Array<Menu>;
+  filePath: string;
+  path: string;
+};
+declare type SubMenu = {
+  name: string;
+  children: Array<Menu>;
 };
 
-// TODO: change to auto config
-const menuConfig: Array<Menu> = [
+const menuConfig: Array<SubMenu> = [
   {
     name: "GET STARTED",
     children: [
       {
         name: "Introduction",
+        filePath: Intro,
         path: "Intro",
       },
     ],
@@ -20,7 +27,8 @@ const menuConfig: Array<Menu> = [
     children: [
       {
         name: "hello-world",
-        path: "../../packages/HelloWorld/README",
+        filePath: HelloWorld,
+        path: "helloworld",
       },
     ],
   },
@@ -29,18 +37,14 @@ const menuConfig: Array<Menu> = [
 export { menuConfig };
 
 export default menuConfig
-  .reduce((prev: Array<Menu>, current: Menu): Array<any> => {
-    return [...prev, ...(current.children ? current.children : [])];
+  .reduce((prev: Array<Menu>, current: SubMenu): Array<Menu> => {
+    return [...prev, ...current.children];
   }, [])
   .map((demo: Menu) => {
-    const path: string | undefined  = demo.path;
+    const path: string = demo.path;
     return {
       path: `${path?.toLowerCase()}`,
       name,
-      component: () =>
-        import(/* webpackChunkName: "group-foo" */ `../docs/${path}.md`),
-      meta: {
-        label: name,
-      },
+      component: demo.filePath,
     };
   });

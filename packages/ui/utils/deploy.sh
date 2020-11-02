@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 set -e
-yarn run build
+yarn build
 cd dist
 
 git init
