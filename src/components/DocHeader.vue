@@ -16,7 +16,7 @@
     </div>
   </header>
 </template>
-<script>
+<script lang="ts">
 import { Icon, addCollection } from "@iconify/vue";
 import logos from "@iconify/json/json/logos.json";
 

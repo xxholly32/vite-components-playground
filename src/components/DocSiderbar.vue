@@ -31,7 +31,7 @@
     </nav>
   </aside>
 </template>
-<script>
+<script lang="ts">
 import { menuConfig } from "../router/demo-routes";
 export default {
   setup() {
