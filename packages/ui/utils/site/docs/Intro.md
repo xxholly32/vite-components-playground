@@ -22,4 +22,7 @@ Use [rollup-plugin-vue](https://github.com/vuejs/rollup-plugin-vue) build vue co
 
 ## TODO
 
-+ add test
++ Website optimization
+  + Document style optimization
++ Optimize the test case
++ github template

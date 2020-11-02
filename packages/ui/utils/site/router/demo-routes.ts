@@ -1,9 +1,11 @@
+import { ComponentOptions } from "vue";
+
 import Intro from "../docs/Intro.md";
 import HelloWorld from "../../packages/HelloWorld/README.md";
 
 declare type Menu = {
   name: string;
-  filePath: string;
+  filePath: ComponentOptions;
   path: string;
 };
 declare type SubMenu = {
