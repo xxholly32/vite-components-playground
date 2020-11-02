@@ -16,7 +16,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import DocHeader from "./components/DocHeader.vue";
 import DocSiderbar from "./components/DocSiderbar.vue";
 

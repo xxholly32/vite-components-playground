@@ -3,6 +3,7 @@ import commonjs from "@rollup/plugin-commonjs"; // 将CommonJS模块转换为 ES
 import vue from "rollup-plugin-vue"; // 处理vue文件
 import babel from "@rollup/plugin-babel"; // rollup 的 babel 插件，ES6转ES5
 import css from "rollup-plugin-css-only"; // 提取css，压缩能力不行
+import typescript from "@rollup/plugin-typescript";
 import CleanCSS from "clean-css"; // 压缩css
 import fs from "fs-extra"; // 写文件
 
@@ -13,7 +14,7 @@ export default fs.readdirSync("packages").map((name) => {
     fs.mkdirSync(`./packages/${name}/lib`);
   }
   return {
-    input: `./packages/${name}/index`,
+    input: `./packages/${name}/index.ts`,
     external: ["vue"], //使用外部的依赖，如果使用内部 vue 会照成多重引用
     plugins: [
       resolve({ extensions: [".vue"] }),
@@ -28,8 +29,8 @@ export default fs.readdirSync("packages").map((name) => {
         },
       }),
       // css: false 将<style>块转换为导入语句，rollup-plugin-css-only可以提取.vue文件中的样式
-      vue({ css: false }),
-      babel(),
+      vue(),
+      typescript()
     ],
     output: {
       name: "index",
