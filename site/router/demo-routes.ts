@@ -1,6 +1,6 @@
 import { ComponentOptions } from "vue";
 
-import Intro from "../docs/Intro.md";
+import Intro from "../../README.md";
 import HelloWorld from "../../packages/HelloWorld/README.md";
 
 declare type Menu = {
