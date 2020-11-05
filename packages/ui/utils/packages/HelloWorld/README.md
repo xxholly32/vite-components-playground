@@ -7,13 +7,17 @@ tags:
 
 # Hello-world
 
-this is Hello-world component
+This is Hello-world component
 
-### Basic
+## Install
 
-description
+```js
+import ui from "@vitec/hello-world";
 
-> show demo
+createApp(App).use(ui);
+```
+
+## Basic
 
 ```vue
 <template>
