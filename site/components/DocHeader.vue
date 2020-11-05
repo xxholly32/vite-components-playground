@@ -2,7 +2,9 @@
   <header class="flex border-b top-0 inset-x-0 z-100 h-16 items-center">
     <div class="container relative mx-auto px-4 flex items-center h-full">
       <div class="w-1/3">
-        <h1 class="block mr-4 text-2xl">vite-components-playground</h1>
+        <router-link class="block mr-4 text-2xl" to="/">
+          vite-components-playground
+        </router-link>
       </div>
       <div class="w-1/2"></div>
       <div class="flex w-1/6">
