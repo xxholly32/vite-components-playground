@@ -12,7 +12,7 @@ npm run dev
 
 Use [vite-plugin-vuedoc](https://github.com/JasKang/vite-plugin-vuedoc) to change markdown to vue , [Tailwind](https://tailwindcss.com/) for site css framework.
 
-### Build sit
+### Build site
 
 ```
 npm run build
