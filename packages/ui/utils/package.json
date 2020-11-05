@@ -34,6 +34,7 @@
     "postcss-nested": "^4.2.3",
     "rollup": "^1.16.7",
     "rollup-plugin-css-only": "^2.1.0",
+    "rollup-plugin-esbuild": "^2.5.2",
     "rollup-plugin-vue": "^6.0.0-beta.4",
     "tailwindcss": "^1.8.10",
     "ts-loader": "^8.0.3",
