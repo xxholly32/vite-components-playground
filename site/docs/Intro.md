@@ -1,4 +1,4 @@
-# Intro
+# vite-components-playground
 
 This is a vue3 components playground use [vite](https://github.com/vitejs/vite).
 
@@ -12,17 +12,27 @@ npm run dev
 
 Use [vite-plugin-vuedoc](https://github.com/JasKang/vite-plugin-vuedoc) to change markdown to vue , [Tailwind](https://tailwindcss.com/) for site css framework.
 
-## build component
+
+### Build sit
+
+```
+npm run build
+```
+
+## Build components
 
 ```bash
 npm run build:all
 ```
 
-Use [rollup-plugin-vue](https://github.com/vuejs/rollup-plugin-vue) build vue components.
+Use [rollup-plugin-vue](https://github.com/vuejs/rollup-plugin-vue) , [rollup-plugin-esbuild](https://github.com/egoist/rollup-plugin-esbuild) build vue components.
 
 ## TODO
 
-+ Website optimization
-  + Document style optimization
-+ Optimize the test case
-+ github template
+- Website optimization
+  - Document style optimization
+  - re-design tailwindcss system
+- Optimize the test case
+- github template?
+- add theme system
+- add icon

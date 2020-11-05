@@ -1,9 +1,8 @@
 import resolve from "@rollup/plugin-node-resolve"; // 告诉 Rollup 如何查找外部模块
 import commonjs from "@rollup/plugin-commonjs"; // 将CommonJS模块转换为 ES2015 供 Rollup 处理
+import esbuild from 'rollup-plugin-esbuild'
 import vue from "rollup-plugin-vue"; // 处理vue文件
-import babel from "@rollup/plugin-babel"; // rollup 的 babel 插件，ES6转ES5
 import css from "rollup-plugin-css-only"; // 提取css，压缩能力不行
-import typescript from "@rollup/plugin-typescript";
 import CleanCSS from "clean-css"; // 压缩css
 import fs from "fs-extra"; // 写文件
 
@@ -30,7 +29,7 @@ export default fs.readdirSync("packages").map((name) => {
       }),
       // css: false 将<style>块转换为导入语句，rollup-plugin-css-only可以提取.vue文件中的样式
       vue(),
-      typescript()
+      esbuild()
     ],
     output: {
       name: "index",
