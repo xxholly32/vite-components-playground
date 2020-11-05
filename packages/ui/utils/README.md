@@ -12,7 +12,6 @@ npm run dev
 
 Use [vite-plugin-vuedoc](https://github.com/JasKang/vite-plugin-vuedoc) to change markdown to vue , [Tailwind](https://tailwindcss.com/) for site css framework.
 
-
 ### Build sit
 
 ```
@@ -36,3 +35,9 @@ Use [rollup-plugin-vue](https://github.com/vuejs/rollup-plugin-vue) , [rollup-pl
 - github template?
 - add theme system
 - add icon
+
+more detail see my [blog](https://xxholly32.github.io/Blog/2020/vite-components-playground.html)
+
+## License
+
+MIT &copy; [xxholly32 (xiangxiao)](https://github.com/xxholly32)
