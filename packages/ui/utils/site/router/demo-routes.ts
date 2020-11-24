@@ -1,7 +1,7 @@
 import { ComponentOptions } from "vue";
 
 import Intro from "../../README.md";
-import HelloWorld from "../../packages/HelloWorld/README.md";
+import Button from "../../packages/Button/README.md";
 
 declare type Menu = {
   name: string;
@@ -28,9 +28,9 @@ const menuConfig: Array<SubMenu> = [
     name: "Components",
     children: [
       {
-        name: "hello-world",
-        filePath: HelloWorld,
-        path: "helloworld",
+        name: "button",
+        filePath: Button,
+        path: "button",
       },
     ],
   },
