@@ -6,7 +6,7 @@
     "test": "jest",
     "bootstrap": "yarn && lerna bootstrap",
     "build": "vite build",
-    "build:all": "yarn rollup -c build/rollup.config.js",
+    "build:all": "NODE_ENV=production yarn rollup -c build/rollup.config.js",
     "deploy": "bash deploy.sh"
   },
   "dependencies": {
@@ -35,6 +35,7 @@
     "rollup": "^1.16.7",
     "rollup-plugin-css-only": "^2.1.0",
     "rollup-plugin-esbuild": "^2.5.2",
+    "rollup-plugin-postcss": "^3.1.8",
     "rollup-plugin-vue": "^6.0.0-beta.4",
     "tailwindcss": "^1.8.10",
     "ts-loader": "^8.0.3",
