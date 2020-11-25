@@ -19,7 +19,6 @@ export default fs.readdirSync("packages").map((name) => {
     external: ["vue"], //使用外部的依赖，如果使用内部 vue 会照成多重引用
     plugins: [
       resolve({ extensions: [".vue"] }),
-      commonjs(),
       postcss({
         config: {
           path: "./postcss.config.js",
@@ -41,6 +40,7 @@ export default fs.readdirSync("packages").map((name) => {
       // css: false 将<style>块转换为导入语句，rollup-plugin-css-only可以提取.vue文件中的样式
       vue(),
       esbuild(),
+      commonjs(),
     ],
     output: {
       name: "index",
