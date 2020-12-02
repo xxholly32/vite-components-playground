@@ -6,7 +6,7 @@
     "test": "jest",
     "bootstrap": "yarn && lerna bootstrap",
     "build": "vite build",
-    "build:all": "NODE_ENV=production yarn rollup -c build/rollup.config.js",
+    "build:all": "cross-env NODE_ENV=production yarn rollup -c build/rollup.config.js",
     "deploy": "bash deploy.sh"
   },
   "dependencies": {
@@ -26,6 +26,7 @@
     "@vue/compiler-sfc": "^3.0.0",
     "@vue/test-utils": "^2.0.0-beta.3",
     "clean-css": "^4.2.3",
+    "cross-env": "^7.0.2",
     "jest": "^25.1.0",
     "lerna": "^3.13.0",
     "markdown-it": "^11.0.1",
