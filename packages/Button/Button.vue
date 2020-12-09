@@ -13,3 +13,6 @@ export default defineComponent({
   },
 });
 </script>
+<style lang="css">
+@import url("./style/main.css");
+</style>

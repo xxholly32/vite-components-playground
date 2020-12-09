@@ -1,6 +1,6 @@
 module.exports = {
   plugins: [
-    require('@tailwindcss/typography'),
-    require("./packages/Button/style/index")
+    require("@tailwindcss/typography"),
+    // require("./packages/Button/style/index")
   ],
-}
+};
