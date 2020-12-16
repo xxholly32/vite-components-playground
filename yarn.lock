@@ -2418,6 +2418,21 @@
   resolved "https://registry.npmjs.org/@vue/test-utils/-/test-utils-2.0.0-beta.8.tgz#13be1a31f4d6d396e2a9d595d4e0f236421eba98"
   integrity sha512-ksQYCzBINZy9iSb9jCo3AbfTEQ2Xw7NEyGA07frqNZ3tHG4pBnnRrTi+zoS7wi89f41eyx2zVhAF/mvzDKNG2A==
 
+"@vueuse/core@^4.0.0-rc.10":
+  version "4.0.0-rc.10"
+  resolved "https://registry.npm.taobao.org/@vueuse/core/download/@vueuse/core-4.0.0-rc.10.tgz#ffc828e75fdc959b2293738b127fd85f059d7417"
+  integrity sha1-/8go51/clZsik3OLEn/YXwWddBc=
+  dependencies:
+    "@vueuse/shared" "4.0.0-rc.10"
+    vue-demi latest
+
+"@vueuse/shared@4.0.0-rc.10":
+  version "4.0.0-rc.10"
+  resolved "https://registry.npm.taobao.org/@vueuse/shared/download/@vueuse/shared-4.0.0-rc.10.tgz#6669efd7500b6709d3ea4737983bf50941ff3ff5"
+  integrity sha1-Zmnv11ALZwnT6kc3mDv1CUH/P/U=
+  dependencies:
+    vue-demi latest
+
 "@zkochan/cmd-shim@^3.1.0":
   version "3.1.0"
   resolved "https://registry.npmjs.org/@zkochan/cmd-shim/-/cmd-shim-3.1.0.tgz#2ab8ed81f5bb5452a85f25758eb9b8681982fd2e"
@@ -5798,7 +5813,7 @@ isarray@0.0.1:
   resolved "https://registry.npmjs.org/isarray/-/isarray-0.0.1.tgz#8a18acfca9a8f4177e09abfc6038939b05d1eedf"
   integrity sha1-ihis/Kmo9Bd+Cav8YDiTmwXR7t8=
 
-isarray@1.0.0, isarray@^1.0.0, isarray@~1.0.0:
+isarray@1.0.0, isarray@~1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/isarray/-/isarray-1.0.0.tgz#bb935d48582cba168c06834957a54a3e07124f11"
   integrity sha1-u5NdSFgsuhaMBoNJV6VKPgcSTxE=
@@ -6565,14 +6580,6 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-line-column@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.npm.taobao.org/line-column/download/line-column-1.0.2.tgz#d25af2936b6f4849172b312e4792d1d987bc34a2"
-  integrity sha1-0lryk2tvSEkXKzEuR5LR2Ye8NKI=
-  dependencies:
-    isarray "^1.0.0"
-    isobject "^2.0.0"
-
 lines-and-columns@^1.1.6:
   version "1.1.6"
   resolved "https://registry.npmjs.org/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
@@ -7179,7 +7186,7 @@ mz@^2.5.0:
     object-assign "^4.0.1"
     thenify-all "^1.0.0"
 
-nanoid@^3.1.16, nanoid@^3.1.20:
+nanoid@^3.1.20:
   version "3.1.20"
   resolved "https://registry.npm.taobao.org/nanoid/download/nanoid-3.1.20.tgz?cache=0&sync_timestamp=1606833990942&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnanoid%2Fdownload%2Fnanoid-3.1.20.tgz#badc263c6b1dcf14b71efaa85f6ab4c1d6cfc788"
   integrity sha1-utwmPGsdzxS3HvqoX2q0wdbPx4g=
@@ -8385,17 +8392,7 @@ postcss-value-parser@^4.0.2, postcss-value-parser@^4.1.0:
   resolved "https://registry.npmjs.org/postcss-value-parser/-/postcss-value-parser-4.1.0.tgz#443f6a20ced6481a2bda4fa8532a6e55d789a2cb"
   integrity sha512-97DXOFbQJhk71ne5/Mt6cOu6yxsSfM0QGQyl0L25Gca4yGWEGJaig7l7gbCX623VqTBNGLRLaVUCnNkcedlRSQ==
 
-postcss@6.0.1, postcss@7.0.32, postcss@8.1.7, postcss@^6.0.1, postcss@^6.0.9, postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.27, postcss@^7.0.32, postcss@^7.0.5, postcss@^7.0.6, postcss@^8.1.6:
-  version "8.1.7"
-  resolved "https://registry.npm.taobao.org/postcss/download/postcss-8.1.7.tgz?cache=0&sync_timestamp=1607411771365&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss%2Fdownload%2Fpostcss-8.1.7.tgz#ff6a82691bd861f3354fd9b17b2332f88171233f"
-  integrity sha1-/2qCaRvYYfM1T9mxeyMy+IFxIz8=
-  dependencies:
-    colorette "^1.2.1"
-    line-column "^1.0.2"
-    nanoid "^3.1.16"
-    source-map "^0.6.1"
-
-postcss@^8.2.0:
+postcss@6.0.1, postcss@7.0.32, postcss@^6.0.1, postcss@^6.0.9, postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.14, postcss@^7.0.27, postcss@^7.0.32, postcss@^7.0.5, postcss@^7.0.6, postcss@^8.1.6, postcss@^8.2.0:
   version "8.2.0"
   resolved "https://registry.npm.taobao.org/postcss/download/postcss-8.2.0.tgz?cache=0&sync_timestamp=1607411771365&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss%2Fdownload%2Fpostcss-8.2.0.tgz#214be4eda36db762eb8a89d7c7362b9341156eb5"
   integrity sha1-IUvk7aNtt2LrionXxzYrk0EVbrU=
@@ -10404,6 +10401,11 @@ vite@^1.0.0-rc.8:
     slash "^3.0.0"
     vue "^3.0.2"
     ws "^7.3.1"
+
+vue-demi@latest:
+  version "0.4.5"
+  resolved "https://registry.npm.taobao.org/vue-demi/download/vue-demi-0.4.5.tgz#ea422a4468cb6321a746826a368a770607f87791"
+  integrity sha1-6kIqRGjLYyGnRoJqNop3Bgf4d5E=
 
 vue-jest@5.0.0-alpha.1:
   version "5.0.0-alpha.1"
