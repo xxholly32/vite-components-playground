@@ -1,7 +1,7 @@
 import { ComponentOptions } from "vue";
 
 import Intro from "../../README.md";
-import Button from "../../packages/Button/README.md";
+import Button from "../../packages/ui/Button/README.md";
 
 declare type Menu = {
   name: string;
