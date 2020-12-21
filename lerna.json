@@ -1,4 +1,9 @@
 {
-  "packages": ["packages/ui/*", "packages/theme", "packages/vgc"],
+  "packages": [
+    "packages/ui/*",
+    "packages/theme",
+    "packages/vitec",
+    "packages/utils"
+  ],
   "version": "0.0.0"
 }
