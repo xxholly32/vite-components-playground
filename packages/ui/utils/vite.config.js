@@ -1,10 +1,16 @@
-import vitePluginVuedoc from 'vite-plugin-vuedoc'
+import vitePluginVuedoc from "vite-plugin-vuedoc";
 
 const config = {
-  base: './',
+  base: "./",
   // can read default _assets at Github pages
   assetsDir: "site/assets",
-  plugins: [vitePluginVuedoc()]
-}
+  plugins: [
+    vitePluginVuedoc({
+      prism: {
+        theme: "okaidia",
+      },
+    }),
+  ],
+};
 
-export default config
+export default config;
