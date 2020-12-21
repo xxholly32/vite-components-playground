@@ -12,6 +12,7 @@ This is Button component
 ## Install
 
 ```js
+# 使用 npm
 import ui from "@vitec/button";
 
 createApp(App).use(ui);
