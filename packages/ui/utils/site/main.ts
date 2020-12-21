@@ -12,4 +12,9 @@ import "../packages/theme/index.css";
 
 import "./assets/style/main.css";
 
-createApp(App).use(ui).use(router).mount("#app");
+createApp(App)
+  .use(ui, {
+    componentSize: "middle",
+  })
+  .use(router)
+  .mount("#app");
