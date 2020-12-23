@@ -1,13 +1,10 @@
 {
   "compilerOptions": {
-    "module": "ES2020",
-    "target": "esnext",
     "moduleResolution": "node",
     "strict": true,
+    "declaration": true,
     "noUnusedLocals": true,
     "esModuleInterop": true
   },
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

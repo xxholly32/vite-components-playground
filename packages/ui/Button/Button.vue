@@ -6,7 +6,9 @@
 
 <script lang="ts">
 import { defineComponent, computed } from "vue";
+import { useGlobalConfig } from "@vitec/utils";
 export default defineComponent({
+  name: "button",
   props: {
     type: String,
     size: String,

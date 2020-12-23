@@ -30,7 +30,7 @@
     "clean-css": "^4.2.3",
     "cross-env": "^7.0.2",
     "jest": "^25.1.0",
-    "lerna": "^3.13.0",
+    "lerna": "^3.22.1",
     "markdown-it": "^11.0.1",
     "markdown-it-prism": "^2.1.2",
     "node-fs-extra": "^0.8.2",

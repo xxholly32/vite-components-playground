@@ -55,6 +55,7 @@ Components have a certain degree of generality, in the design of components need
 ## TODO
 
 - add common-system config
+- change build mode
 
 more detail see my [blog](https://xxholly32.github.io/Blog/2020/vite-components-playground.html)
 
