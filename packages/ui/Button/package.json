@@ -2,8 +2,12 @@
   "name": "@vitec/button",
   "version": "0.0.0",
   "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "dependencies": {
-    "@vitec/utils": "^1.0.0",
+    "@vitec/utils": "^0.0.0",
+    "@vitec/theme": "^0.0.0",
     "vue": "^3.0.0"
   }
 }

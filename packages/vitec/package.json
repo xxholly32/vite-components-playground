@@ -17,10 +17,13 @@
     "type": "git",
     "url": "git+https://github.com/xxholly32/vite-components-playground.git"
   },
-  "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
-  },
   "bugs": {
     "url": "https://github.com/xxholly32/vite-components-playground/issues"
+  },
+  "dependencies": {
+    "@vitec/button": "^0.0.0",
+    "@vitec/utils": "^0.0.0",
+    "@vitec/theme": "^0.0.0",
+    "vue": "^3.0.0"
   }
 }

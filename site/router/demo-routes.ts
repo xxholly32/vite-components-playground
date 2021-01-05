@@ -1,7 +1,9 @@
 import { ComponentOptions } from "vue";
 
-import Intro from "../../README.md";
-import Button from "../../packages/ui/Button/README.md";
+import introDoc from "../../README.md";
+import buttonDoc from "../../packages/ui/button/README.md";
+import themeDoc from "../../packages/theme/README.md";
+import utilsDoc from "../../packages/utils/README.md";
 
 declare type Menu = {
   name: string;
@@ -18,9 +20,19 @@ const menuConfig: Array<SubMenu> = [
     name: "GET STARTED",
     children: [
       {
-        name: "Introduction",
-        filePath: Intro,
-        path: "Intro",
+        name: "introduction",
+        filePath: introDoc,
+        path: "intro",
+      },
+      {
+        name: "Theme",
+        filePath: themeDoc,
+        path: "theme",
+      },
+      {
+        name: "utils",
+        filePath: utilsDoc,
+        path: "utils",
       },
     ],
   },
@@ -29,7 +41,7 @@ const menuConfig: Array<SubMenu> = [
     children: [
       {
         name: "button",
-        filePath: Button,
+        filePath: buttonDoc,
         path: "button",
       },
     ],

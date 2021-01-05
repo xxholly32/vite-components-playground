@@ -4,17 +4,17 @@ import router from "./router";
 
 // dev mode
 import ui from "../packages/vitec";
-import "../packages/theme/index.css";
+import "../packages/vitec/style/index.css";
 
 // build mode
-// import ui from "../packages/Button/lib/index";
-// import "../packages/Button/lib/index.css";
+// import ui from "../packages/vitec/lib";
+// import "../packages/vitec/lib/index.css";
 
 import "./assets/style/main.css";
 
 createApp(App)
   .use(ui, {
-    componentSize: "middle",
+    // componentSize: "large"
   })
   .use(router)
   .mount("#app");

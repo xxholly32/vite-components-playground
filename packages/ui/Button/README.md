@@ -12,7 +12,7 @@ This is Button component
 ## Install
 
 ```js
-# 使用 npm
+# use npm
 import ui from "@vitec/button";
 
 createApp(App).use(ui);
@@ -22,11 +22,21 @@ createApp(App).use(ui);
 
 ```vue demo
 <template>
-  <el-button>默认按钮</el-button>
-  <el-button type="primary">主要按钮</el-button>
-  <el-button type="success">成功按钮</el-button>
-  <el-button type="info">信息按钮</el-button>
-  <el-button type="warning">警告按钮</el-button>
-  <el-button type="danger">危险按钮</el-button>
+  <vc-button>default</vc-button>
+  <vc-button type="primary">primary</vc-button>
+  <vc-button type="success">success</vc-button>
+  <vc-button type="info">info</vc-button>
+  <vc-button type="warning">warning</vc-button>
+  <vc-button type="danger">danger</vc-button>
+</template>
+```
+
+## Different Size
+
+```vue demo
+<template>
+  <vc-button type="success">default</vc-button>
+  <vc-button type="success" size="small">small</vc-button>
+  <vc-button type="success" size="large">large</vc-button>
 </template>
 ```

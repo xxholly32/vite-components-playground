@@ -2,41 +2,21 @@ import resolve from "@rollup/plugin-node-resolve"; // 告诉 Rollup 如何查找
 import commonjs from "@rollup/plugin-commonjs"; // 将CommonJS模块转换为 ES2015 供 Rollup 处理
 import esbuild from "rollup-plugin-esbuild";
 import vue from "rollup-plugin-vue"; // 处理vue文件
-import css from "rollup-plugin-css-only"; // 提取css，压缩能力不行
-import postcss from "rollup-plugin-postcss";
-import CleanCSS from "clean-css"; // 压缩css
 import fs from "fs-extra"; // 写文件
 
-export default fs.readdirSync("packages").map((name) => {
-  if (name === "theme") return null;
-  if (fs.existsSync(`./packages/${name}/lib`)) {
-    fs.emptyDirSync(`./packages/${name}/lib`);
+const UI_PATH = "./packages/ui";
+
+let dirs = fs.readdirSync(UI_PATH).map((name) => {
+  if (fs.existsSync(`${UI_PATH}/${name}/lib`)) {
+    fs.emptyDirSync(`${UI_PATH}/${name}/lib`);
   } else {
-    fs.mkdirSync(`./packages/${name}/lib`);
+    fs.mkdirSync(`${UI_PATH}/${name}/lib`);
   }
   return {
-    input: `./packages/${name}/index.ts`,
+    input: `${UI_PATH}/${name}/index.ts`,
     external: ["vue"], //使用外部的依赖，如果使用内部 vue 会照成多重引用
     plugins: [
       resolve({ extensions: [".vue"] }),
-      postcss({
-        config: {
-          path: "./postcss.config.js",
-        },
-        extensions: [".css"],
-        extract: true,
-        // minimize: process.env.NODE_ENV === "production",
-        // modules: true,
-      }),
-      css({
-        output(style) {
-          // 压缩 css 写入 dist/vue-rollup-component-template.css
-          fs.writeFileSync(
-            `./packages/${name}/lib/index.css`,
-            new CleanCSS().minify(style).styles
-          );
-        },
-      }),
       // css: false 将<style>块转换为导入语句，rollup-plugin-css-only可以提取.vue文件中的样式
       vue(),
       esbuild(),
@@ -44,8 +24,27 @@ export default fs.readdirSync("packages").map((name) => {
     ],
     output: {
       name: "index",
-      file: `./packages/${name}/lib/index.js`,
+      file: `${UI_PATH}/${name}/lib/index.js`,
       format: "es",
     },
   };
 });
+
+dirs.push({
+  input: `./packages/vitec/index.ts`,
+  external: ["vue"], //使用外部的依赖，如果使用内部 vue 会照成多重引用
+  plugins: [
+    resolve({ extensions: [".vue"] }),
+    // css: false 将<style>块转换为导入语句，rollup-plugin-css-only可以提取.vue文件中的样式
+    vue(),
+    esbuild(),
+    commonjs(),
+  ],
+  output: {
+    name: "index",
+    file: `./packages/vitec/lib/index.js`,
+    format: "es",
+  },
+});
+
+export default dirs;

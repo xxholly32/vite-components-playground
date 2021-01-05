@@ -1,0 +1,43 @@
+@layer components {
+  .btn {
+    @apply border rounded;
+  }
+  .btn-default {
+    @apply py-2 px-4;
+    + .btn {
+      @apply ml-4;
+    }
+  }
+  .btn-small {
+    @apply py-1 px-2;
+    + .btn {  
+      @apply ml-2;
+    }
+  }
+  .btn-large {
+    @apply py-4 px-8;
+    + .btn {  
+      @apply ml-8;
+    }
+  }
+
+  .btn-primary {
+    @apply color-primary hover:color-primary;
+  }
+
+  .btn-success {
+    @apply color-success hover:color-success;
+  }
+
+  .btn-info {
+    @apply color-info hover:color-info;
+  }
+
+  .btn-warning {
+    @apply color-warning hover:color-warning;
+  }
+
+  .btn-danger {
+    @apply color-danger hover:color-danger;
+  }
+}

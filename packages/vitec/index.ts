@@ -1,9 +1,17 @@
 import { App } from "vue";
-import Button from "../ui/Button/Button.vue";
+// import Button from "@vitec/button";
+import Button from "../ui/button/src/Button.vue";
 import { VitecOptions } from "@vitec/utils";
 
-export default (app: App, option: VitecOptions): void => {
-  app.config.globalProperties.$vitec = option;
+export default (app: App, options: VitecOptions): void => {
+  const optionsResolver: VitecOptions = Object.assign(
+    {
+      componentSize: "default",
+    },
+    options
+  );
 
-  app.component(Button.name, Button);
+  app.config.globalProperties.$vitec = optionsResolver;
+
+  app.component(`vc-button`, Button);
 };
