@@ -1,11 +1,5 @@
 {
   "name": "@vitec/theme",
   "version": "0.0.0",
-  "main": "index.css",
-  "directories": {
-    "lib": "lib"
-  },
-  "files": [
-    "lib"
-  ]
+  "main": "index.css"
 }

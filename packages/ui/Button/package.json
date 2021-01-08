@@ -1,13 +1,12 @@
 {
   "name": "@vitec/button",
   "version": "0.0.0",
-  "main": "lib/index.js",
-  "files": [
-    "lib"
-  ],
+  "main": "index.ts",
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
   "dependencies": {
     "@vitec/utils": "^0.0.0",
-    "@vitec/theme": "^0.0.0",
-    "vue": "^3.0.0"
+    "@vitec/theme": "^0.0.0"
   }
 }

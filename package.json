@@ -1,12 +1,19 @@
 {
   "name": "vite-components-playground",
   "version": "0.0.1",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "packages/ui/*",
+    "packages/*"
+  ],
   "scripts": {
     "dev": "vite",
     "test": "jest",
-    "bootstrap": "yarn && lerna bootstrap",
+    "bootstrap": "yarn --frozen-lockfile && yarn lerna bootstrap",
+    "clean": "rimraf lib",
     "build": "vite build",
-    "build:all": "yarn build:components && yarn build:themes",
+    "build:all": "yarn clean && yarn build:components && yarn build:themes",
     "build:components": "cross-env NODE_ENV=production yarn rollup -c build/rollup.config.js",
     "build:themes": "cross-env NODE_ENV=production gulp -f ./build/gulpfile.js",
     "deploy": "bash deploy.sh"

@@ -1,15 +1,7 @@
 {
   "name": "@vitec/utils",
   "version": "0.0.0",
-  "main": "lib/index.js",
-  "files": [
-    "lib",
-    "src"
-  ],
-  "scripts": {
-    "dev": "tsc -w -p",
-    "build": "rm -rf lib && tsc -p ."
-  },
+  "main": "index.ts",
   "devDependencies": {
     "@vue/runtime-core": "^3.0.0",
     "typescript": "^4.1.3"

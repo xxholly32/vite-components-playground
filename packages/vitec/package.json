@@ -1,29 +1,9 @@
 {
   "name": "vitec",
   "version": "0.0.0",
-  "description": "> TODO: description",
-  "author": "xxholly32 <xxholly32@163.com>",
-  "homepage": "https://github.com/xxholly32/vite-components-playground#readme",
-  "license": "ISC",
-  "main": "lib/vitec.js",
-  "directories": {
-    "lib": "lib",
-    "test": "__tests__"
-  },
-  "files": [
-    "lib"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/xxholly32/vite-components-playground.git"
-  },
-  "bugs": {
-    "url": "https://github.com/xxholly32/vite-components-playground/issues"
-  },
   "dependencies": {
     "@vitec/button": "^0.0.0",
     "@vitec/utils": "^0.0.0",
-    "@vitec/theme": "^0.0.0",
-    "vue": "^3.0.0"
+    "@vitec/theme": "^0.0.0"
   }
 }

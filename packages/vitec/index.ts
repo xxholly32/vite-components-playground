@@ -1,6 +1,6 @@
 import { App } from "vue";
 // import Button from "@vitec/button";
-import Button from "../ui/button/src/Button.vue";
+import Button from "@vitec/button";
 import { VitecOptions } from "@vitec/utils";
 
 export default (app: App, options: VitecOptions): void => {

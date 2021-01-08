@@ -1,4 +1,5 @@
 import vitePluginVuedoc from "vite-plugin-vuedoc";
+import path from 'path'
 
 const config = {
   base: "./",

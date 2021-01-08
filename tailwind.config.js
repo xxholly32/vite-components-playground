@@ -1,4 +1,5 @@
 module.exports = {
+  purge: false,
   darkMode: "class",
   typography: (theme) => ({
     dark: {

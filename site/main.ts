@@ -7,9 +7,10 @@ import ui from "../packages/vitec";
 import "../packages/vitec/style/index.css";
 
 // build mode
-// import ui from "../packages/vitec/lib";
-// import "../packages/vitec/lib/index.css";
+// import ui from "../lib/vitec";
+// import "../lib/vitec/style/index.css";
 
+// tailwindcsss
 import "./assets/style/main.css";
 
 createApp(App)
